@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- cdn font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="img/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Product list with cart</title>
+  </head>
+  <body>
+    <main class="main-content">
+      <h1>Desserts</h1>
+      <div class="home">
+        <div class="product-content" id="product"></div>
+        <div class="cart">
+          <h2>Your Cart</h2>
+          <cart id="yourCart">
+
+          </cart>
+        </div>
+      </div>
+    </main>
+    <div id="orderModal" class="modal hidden">
+  <div class="modal-content">
+    <h2>Order Confirmed</h2>
+    <p>We hope you enjoy your food!</p>
+
+    <div id="orderItems"></div>
+
+    <h3 id="orderTotal"></h3>
+
+    <button onclick="startNewOrder()" class="confirm">
+      Start New Order
+    </button>
+  </div>
+</div>
+    <!-- <img src="img/image-baklava-desktop.jpg"> -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
